@@ -1,9 +1,9 @@
-12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GD-LT-333Q.funddevelopmentservices.com.
-12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: result: 0x251d from DnsQuery_W(DNS_TYPE_AAAA) on HSE-GD-LT-333Q.funddevelopmentservices.com
+12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.
+12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: result: 0x251d from DnsQuery_W(DNS_TYPE_AAAA) on HSE-GD.funddservices.com
 12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: total of 0x0(0) DNS records found.
 12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: returning 0x0.
 12/03 13:54:37 [MISC] [6832] NlQueryClientSiteFromAddressLookup: result: 0x0 for HSE-GD-LT-333Q
-12/03 13:54:37 [6832] FDS: NO_CLIENT_SITE: HSE-GD-LT-333Q 10.100.34.91
+12/03 13:54:37 [6832] FDS: NO_CLIENT_SITE: HSE-GD-LT-333Q 10.234.90.91
 12/03 13:54:37 [MAILSLOT] [6832] FDS: Ping response 'Sam Logon Response Ex' (null) to \\HSE-GD-LT-333Q Site: (null) on UDP LDAP
-12/03 13:54:38 [MAILSLOT] [6832] Received ping from HSE-GD-LT-1SA7(HSE-GD-LT-1SA7.funddevelopmentservices.com) funddevelopmentservices.com. (null) on UDP LDAP
-12/03 13:54:38 [MISC] [6832] NlQueryClientSiteFromAddressLookup: site lookup requested for HSE-GD-LT-1SA7 (HSE-GD-LT-1SA7.funddevelopmentservices.com) with lookup policy=0x2.
+12/03 13:54:38 [MAILSLOT] [6832] Received ping from HSE-GD-LT-1SA7(HSE-GD-LT-1SA7.funddevelopment.com) fundervices.com. (null) on UDP LDAP
+12/03 13:54:38 [MISC] [6832] NlQueryClientSiteFromAddressLookup: site lookup requested for HSE-GD-LT-1SA7 (HSE-GD-LT-1SA7.fundservices.com) with lookup policy=0x2.
