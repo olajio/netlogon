@@ -29,5 +29,5 @@ Deploy to a single DC first:
 - Check for parsing failures in the ingest pipeline
 - Determine log volume
 
-### Phase 7: Rollout filebeat input
+### Phase 6: Rollout filebeat input
 - First rollout to filebeat to other DC's
