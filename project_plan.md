@@ -32,3 +32,5 @@ Deploy to a single DC first:
 #### Phase 6: Rollout filebeat input
 - First rollout filebeat to HST DC servers
 - Rollout to DC in prod
+
+#### Phase 7: Create Filebeat input for MT
