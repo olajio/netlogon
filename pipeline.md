@@ -6,7 +6,7 @@ Since the netlogon log format doesn't include the year, I will consider a few op
 
 Use a script processor to prepend the current year before parsing the date:
 
-```json
+```
 PUT _ingest/pipeline/netlogon-parse
 {
   "description": "Parse netlogon debug logs with missing year",
@@ -72,7 +72,8 @@ PUT _ingest/pipeline/netlogon-parse
       }
     }
   ]
-}```
+}
+```
 
 ### Option 2: Handle Year Rollover Edge Case
 
