@@ -18,7 +18,7 @@
             },
             "_ingest": {
               "pipeline": "_simulate_pipeline",
-              "timestamp": "2025-12-04T00:30:52.724357655Z"
+              "timestamp": "2025-12-04T00:44:34.719537048Z"
             }
           }
         },
@@ -31,15 +31,15 @@
             "_id": "id",
             "_source": {
               "message": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
-              "log_content": "13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log_content": "[MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
               "log": {
                 "original": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com."
               },
-              "timestamp": "12/03"
+              "timestamp": "12/0313:54:37"
             },
             "_ingest": {
               "pipeline": "_simulate_pipeline",
-              "timestamp": "2025-12-04T00:30:52.724357655Z"
+              "timestamp": "2025-12-04T00:44:34.719537048Z"
             }
           }
         },
@@ -53,16 +53,16 @@
             "_id": "id",
             "_source": {
               "message": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
-              "log_content": "13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log_content": "[MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
               "log": {
                 "original": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com."
               },
-              "timestamp_with_year": "2025/12/03",
-              "timestamp": "12/03"
+              "timestamp_with_year": "2025/12/0313:54:37",
+              "timestamp": "12/0313:54:37"
             },
             "_ingest": {
               "pipeline": "_simulate_pipeline",
-              "timestamp": "2025-12-04T00:30:52.724357655Z"
+              "timestamp": "2025-12-04T00:44:34.719537048Z"
             }
           }
         },
@@ -73,17 +73,17 @@
             "root_cause": [
               {
                 "type": "illegal_argument_exception",
-                "reason": "unable to parse date [2025/12/03]"
+                "reason": "unable to parse date [2025/12/0313:54:37]"
               }
             ],
             "type": "illegal_argument_exception",
-            "reason": "unable to parse date [2025/12/03]",
+            "reason": "unable to parse date [2025/12/0313:54:37]",
             "caused_by": {
               "type": "illegal_argument_exception",
-              "reason": "failed to parse date field [2025/12/03] with format [yyyy/MM/dd HH:mm:ss]",
+              "reason": "failed to parse date field [2025/12/0313:54:37] with format [yyyy/MM/dd HH:mm:ss]",
               "caused_by": {
                 "type": "date_time_parse_exception",
-                "reason": "Text '2025/12/03' could not be parsed at index 10"
+                "reason": "Text '2025/12/0313:54:37' could not be parsed at index 10"
               }
             }
           }
