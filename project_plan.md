@@ -2,9 +2,9 @@
 
 ### Phase 1: Discovery & Sample Analysis
 
-**Immediate action:** Request a sample domain controller from requester and review sample log files from `C:\Windows\debug\netlogon.log` to help me understand the log format as I'll need this in writing the parsing rules maybe using ingest pipeline or filebeat dissect processors.
+Request a sample domain controller from requester and review sample log files from `C:\Windows\debug\netlogon.log` to help me understand the log format as I'll need this in writing the parsing rules maybe using ingest pipeline or filebeat dissect processors.
 
-**Key questions to clarify with requester:**
+**Clarify with requester:**
 - How many domain controllers will this cover? Got a 
 - What specific events needed to be alerted on: No alert requests for now
 - Expected log volume per DC? This is not clear for now, I will device a way to determine this
