@@ -1,0 +1,94 @@
+{
+  "docs": [
+    {
+      "processor_results": [
+        {
+          "processor_type": "set",
+          "status": "success",
+          "description": "Preserve original message",
+          "doc": {
+            "_index": "index",
+            "_version": "-3",
+            "_id": "id",
+            "_source": {
+              "message": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log": {
+                "original": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com."
+              }
+            },
+            "_ingest": {
+              "pipeline": "_simulate_pipeline",
+              "timestamp": "2025-12-04T00:30:52.724357655Z"
+            }
+          }
+        },
+        {
+          "processor_type": "dissect",
+          "status": "success",
+          "doc": {
+            "_index": "index",
+            "_version": "-3",
+            "_id": "id",
+            "_source": {
+              "message": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log_content": "13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log": {
+                "original": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com."
+              },
+              "timestamp": "12/03"
+            },
+            "_ingest": {
+              "pipeline": "_simulate_pipeline",
+              "timestamp": "2025-12-04T00:30:52.724357655Z"
+            }
+          }
+        },
+        {
+          "processor_type": "script",
+          "status": "success",
+          "description": "Add year to timestamp with rollover handling",
+          "doc": {
+            "_index": "index",
+            "_version": "-3",
+            "_id": "id",
+            "_source": {
+              "message": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log_content": "13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com.",
+              "log": {
+                "original": "12/03 13:54:37 [MISC] [6832] NlQueryClientSiteViaDNS: querying IPV4=FALSE, IPV6=TRUE on HSE-GF.fundservices.com."
+              },
+              "timestamp_with_year": "2025/12/03",
+              "timestamp": "12/03"
+            },
+            "_ingest": {
+              "pipeline": "_simulate_pipeline",
+              "timestamp": "2025-12-04T00:30:52.724357655Z"
+            }
+          }
+        },
+        {
+          "processor_type": "date",
+          "status": "error",
+          "error": {
+            "root_cause": [
+              {
+                "type": "illegal_argument_exception",
+                "reason": "unable to parse date [2025/12/03]"
+              }
+            ],
+            "type": "illegal_argument_exception",
+            "reason": "unable to parse date [2025/12/03]",
+            "caused_by": {
+              "type": "illegal_argument_exception",
+              "reason": "failed to parse date field [2025/12/03] with format [yyyy/MM/dd HH:mm:ss]",
+              "caused_by": {
+                "type": "date_time_parse_exception",
+                "reason": "Text '2025/12/03' could not be parsed at index 10"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
