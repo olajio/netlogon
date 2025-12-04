@@ -79,7 +79,7 @@ PUT _ingest/pipeline/netlogon-parse
 
 If you're ingesting logs around December/January, you might want smarter logic:
 
-```json
+```
 {
   "script": {
     "lang": "painless",
@@ -105,7 +105,8 @@ If you're ingesting logs around December/January, you might want smarter logic:
       ctx['timestamp_with_year'] = currentYear + "/" + ctx['timestamp'];
     """
   }
-}```
+}
+```
 
 ---
 
@@ -130,7 +131,7 @@ Use Filebeat processors when you're doing simple field additions, dropping event
 
 ### Recommended Architecture for Your Case
 
-```yaml
+```
 # filebeat.yml - keep it simple
 filebeat.inputs:
   - type: filestream
