@@ -1,6 +1,6 @@
 ## Project Plan: Netlogon Debug Log Ingestion & Alerting
 
-### Phase 1: Discovery & Sample Analysis
+#### Phase 1: Discovery & Sample Analysis
 
 Request a sample domain controller from requester and review sample log files from `C:\Windows\debug\netlogon.log` to help me understand the log format as I'll need this in writing the parsing rules maybe using ingest pipeline or filebeat dissect processors.
 
