@@ -30,4 +30,5 @@ Deploy to a single DC first:
 - Determine log volume
 
 #### Phase 6: Rollout filebeat input
-- First rollout to filebeat to other DC's
+- First rollout filebeat to HST DC servers
+- Rollout to DC in prod
