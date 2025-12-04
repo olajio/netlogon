@@ -21,7 +21,7 @@ PUT _ingest/pipeline/netlogon-parse
     {
       "dissect": {
         "field": "message",
-        "pattern": "%{timestamp} %{log_content}"
+        "pattern": "%{timestamp} %{+timestamp} %{log_content}"
       }
     },
     {
@@ -73,6 +73,13 @@ PUT _ingest/pipeline/netlogon-parse
     }
   ]
 }
+```
+
+## What Changed
+
+The dissect pattern now uses `%{+timestamp}` which is the **append modifier**:
+```
+"%{timestamp} %{+timestamp} %{log_content}"
 ```
 
 ### Option 2: Handle Year Rollover Edge Case
