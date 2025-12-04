@@ -19,7 +19,7 @@ Create a Filebeat input configuration
 
 ### Phase 4: Parsing Pipeline
 
-Ingest Pipeline (recommended)** — Create an Elasticsearch ingest pipeline with grok or dissect processors. This keeps parsing logic centralized and easier to update without redeploying Filebeat.
+Ingest Pipeline — Create an Elasticsearch ingest pipeline
 
 
 ### Phase 5: Validation & Testing
