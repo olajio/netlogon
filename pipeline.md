@@ -104,8 +104,7 @@ If you're ingesting logs around December/January, you might want smarter logic:
       ctx['timestamp_with_year'] = currentYear + "/" + ctx['timestamp'];
     """
   }
-}
-```
+}```
 
 ---
 
